@@ -165,7 +165,7 @@ var color = d3.scaleThreshold()
 // queue up the datasets, run 'ready' when loaded
 d3.queue()
     .defer(d3.json, "us.json")
-    .defer(d3.tsv, "unemployment.tsv")
+    .defer(d3.csv, "election_2016_state_results.csv")
     .await(ready);
 
 // create the graphic with this runction

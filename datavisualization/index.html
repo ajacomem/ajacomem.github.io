@@ -13,7 +13,7 @@
     }
     #chart {
       margin: auto;
-      width: 1440px;
+      width: 960px;
     }
     h2 {
       text-align: center;
@@ -170,7 +170,7 @@
 // create the svg
           (function() {
           // create the svg
-          var width = 960,
+          var width = 900,
               height = 500;
 
           var svg = d3.select("#chart").append("svg")
@@ -192,7 +192,7 @@ var y = d3.scaleLinear()
     .rangeRound([height, 0]);
 // set the colors
 var z = d3.scaleOrdinal()
-    .range(["#2166ac", "#d73027", "#B2AFAB"]);
+    .range(["##1e90ff", "#d73027", "#B2AFAB"]);
 // load the tsv and create the chart
 d3.tsv("election_2016_state_results.tsv", function(d, i, columns) {
   for (i = 1, t = 0; i < columns.length; ++i) t += d[columns[i]] = +d[columns[i]];

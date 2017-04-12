@@ -108,7 +108,7 @@
       // queue up the datasets, run 'ready' when loaded
       d3.queue()
           .defer(d3.json, "us.json")
-          .defer(d3.tsv, "votes.tsv")
+          .defer(d3.tsv, "margin.tsv")
           .await(ready);
       // create the graphic with this function
       function ready(error, us, votes) {

@@ -44,11 +44,11 @@ d3.queue()
     .await(ready);
 
 // create the graphic with this runction
-function ready(error, us, unemployment) {
+function ready(error, us, victory_margin) {
   if (error) throw error;
 
   var rateById = {}; // Create empty object for holding dataset
-  unemployment.forEach(function(d) {
+  victory_margin.forEach(function(d) {
     rateById[d.id] = +d.rate; // Create property for each ID, give it value from rate
     // important: cast rate to numeric value (+)
   });

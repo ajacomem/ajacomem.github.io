@@ -197,8 +197,8 @@ var y = d3.scaleLinear()
 // set the colors
 var z = d3.scaleOrdinal()
     .range(["#2166ac", "#d73027", "#B2AFAB"]);
-// load the csv and create the chart
-d3.csv("data/election_2016_state_results.csv", function(d, i, columns) {
+// load the tsv and create the chart
+d3.tsv("election_2016_state_results.tsv", function(d, i, columns) {
   for (i = 1, t = 0; i < columns.length; ++i) t += d[columns[i]] = +d[columns[i]];
   d.total = t;
   return d;

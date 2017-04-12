@@ -192,7 +192,7 @@ var y = d3.scaleLinear()
     .rangeRound([height, 0]);
 // set the colors
 var z = d3.scaleOrdinal()
-    .range(["##1e90ff", "#d73027", "#B2AFAB"]);
+    .range(["#1e90ff", "#d73027", "#B2AFAB"]);
 // load the tsv and create the chart
 d3.tsv("election_2016_state_results.tsv", function(d, i, columns) {
   for (i = 1, t = 0; i < columns.length; ++i) t += d[columns[i]] = +d[columns[i]];

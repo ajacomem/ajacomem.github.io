@@ -170,6 +170,7 @@
 
 <script>
 // create the svg
+  (function() {
 var svg = d3.select("svg"),
     margin = {top: 20, right: 20, bottom: 30, left: 40},
     width = +svg.attr("width") - margin.left - margin.right,
@@ -268,6 +269,7 @@ d3.tsv("election_2016_state_results.tsv", function(d, i, columns) {
     .style("text-anchor", "middle")
     .attr("font-size", "12px")
     .attr("font-weight", "bold");
+     })();
 </script>
   </div>
 </body>

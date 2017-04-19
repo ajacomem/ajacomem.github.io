@@ -6,102 +6,14 @@
     #main {
       font-family: 'Press Start 2P', cursive;
       }
-    #chloropleth {
-      margin: auto;
-      width: 900px;
-    }
-    #chart {
-      margin: auto;
-      width: 960px;
-    }
-    h2 {
-      text-align: center;
-    }
-    .states {
-      fill: none;
-      stroke: #5a5a5a;
-      stroke-linejoin: round;
-    }
-    .counties {
-      stroke: #bebebe;
-      stroke-linejoin: round;
-    }
-    .my-legend{
-      margin: auto;
-      width: 500px;
-    }
-    .my-legend .category-labels{
-      text-align:left;
-      font-size: 80%;
-    }  
-    .my-legend .legend-scale ul {
-      margin: 0;
-      padding: 0;
-      list-style: none;
-      }
-    .my-legend .legend-scale ul li {
-      display: block;
-      float: left;
-      width: 50px;
-      margin-bottom: 6px;
-      text-align: center;
-      font-size: 65%;
-      list-style: none;
-      }
-    .my-legend ul.legend-labels li span {
-      display: block;
-      float: left;
-      height: 15px;
-      width: 50px;
-      }
-    .my-legend .legend-source {
-      float: left;
-      font-size: 70%;
-      color: #999;
-      clear: both;
-    }
-    .my-legend a {
-      color: #777;
-    }
-    .axis .domain {
-       display: none;
-    }
-    .source {
-      margin: auto;
-      width: 960px;
-      font-size: 70%;
-      color: #999;
-      clear: both;
-    }
-  </style>
+    
 	  
 	<title>2000 to 2016 United States Presidential Election Results</title>
 	<script src="https://d3js.org/d3.v4.min.js"></script>
 	<script src="data/election_results_2000_2016.json"></script>
 	<style>
 
-		h1, h2, h3 {
-		    text-align: center;
-		    left: 10px;
-		    font-size: 1.3em;
-		    font-weight: 100;
-		}
-		h2 {
-		    top: 30px;
-		    font-size: 1em;
-		}
-		h3 {
-			position:relative;
-			left:-65px;
-			top: 30px;
-			font-size:.5em;
-		}
-		#sliderContainer {
-		    text-align: center;
-		    position: relative;
-		    left: -65px;
-		    top: 600px;
-		}
+
 		.my-legend .legend-scale ul {
 	    position: relative;
 	    left: 205px;
@@ -131,14 +43,14 @@
 	</style>
 </head>
 <body>
-	<h1>Presidential Election Results</h1>
-	<h2>By State | 2000 - 2016</h2>
+	<h1>United States Presidential Election </h1>
+	<h2>Results By State: Years 2000 - 2016</h2>
 
 	<div class='my-legend'>
 	<div class='legend-scale'>
 	  <ul class='legend-labels'>
-	    <li><span style='background:#0074D9;'></span>Democrat</li>
-	    <li><span style='background:#FF4136;'></span>Republican</li>
+	    <li><span style='background:#1e90ff;'></span>Democrat</li>
+	    <li><span style='background:#cc0000;'></span>Republican</li>
 	  </ul>
 	</div>
 
@@ -200,46 +112,46 @@
             if (inputValue == 2000) {
                if (data.properties.elect2000 == "R") {
                	  this.parentElement.appendChild(this);
-                  return "#FF4136";
+                  return "#cc0000";
                 } else if (data.properties.elect2000 == "D") {
-                  return "#0074D9";    
+                  return "#1e90ff";    
                 }}
             if (inputValue == 2004) {
                if (data.properties.elect2004 == "R") {
                	  this.parentElement.appendChild(this);
-                  return "#FF4136";
+                  return "#cc0000";
                 } else if (data.properties.elect2004 == "D") {
-                  return "#0074D9";    
+                  return "#1e90ff";    
                 }}
             if (inputValue == 2008) {
                if (data.properties.elect2008 == "R") {
                	  this.parentElement.appendChild(this);
-                  return "#FF4136";
+                  return "#cc0000";
                 } else if (data.properties.elect2008 == "D") {
-                  return "#0074D9";    
+                  return "#1e90ff";    
                 }}
             if (inputValue == 2012) {
                if (data.properties.elect2012 == "R") {
                	  this.parentElement.appendChild(this);
-                  return "#FF4136";
+                  return "#cc0000";
                 } else if (data.properties.elect2012 == "D") {
-                  return "#0074D9";    
+                  return "#1e90ff";    
                 }}
 			if (inputValue == 2016) {
 			    if (data.properties.elect2016 == "R") {
 			        this.parentElement.appendChild(this);
-			        return "#FF4136";
+			        return "#cc0000";
 			    } else if (data.properties.elect2016 == "D") {
-			      return "#0074D9";    
+			      return "#1e90ff";    
 			    };
         }}
 		
 		function initialDate(data, value){
 			 	if (data.properties.elect2000 == "R") {
                	  this.parentElement.appendChild(this);
-                  return "#FF4136";
+                  return "#cc0000";
                 } else if (data.properties.elect2000 == "D") {
-                  return "#0074D9";    
+                  return "#1e90ff";    
                 }}
 	</script>	
 

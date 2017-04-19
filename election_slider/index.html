@@ -1,19 +1,36 @@
-<html lang=en>
-  <head>
-  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
-  <meta charset="utf-8">
-  <style>
-    #main {
-      font-family: 'Press Start 2P', cursive;
-      }
-    
-	  
-	<title>2000 to 2016 United States Presidential Election Results</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>United States Presidential Election Results | Years 2000 - 2016</title>
 	<script src="https://d3js.org/d3.v4.min.js"></script>
-	<script src="data/election_results_2000_2016.json"></script>
+	<script src="election_results_2000_2016.json"></script>
 	<style>
-
-
+		body {
+		    position: absolute;
+		    font-family: "Proxima Nova", "Montserrat", sans-serif;
+		}
+		h1, h2, h3 {
+		    text-align: center;
+		    left: 10px;
+		    font-size: 1.3em;
+		    font-weight: 100;
+		}
+		h2 {
+		    top: 30px;
+		    font-size: 1em;
+		}
+		h3 {
+			position:relative;
+			left:-65px;
+			top: 30px;
+			font-size:.5em;
+		}
+		#sliderContainer {
+		    text-align: center;
+		    position: relative;
+		    left: -65px;
+		    top: 600px;
+		}
 		.my-legend .legend-scale ul {
 	    position: relative;
 	    left: 205px;

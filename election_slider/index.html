@@ -1,14 +1,85 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<title>Presidential Election Results | 2000 - 2016</title>
+<html lang=en>
+  <head>
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+  <meta charset="utf-8">
+  <style>
+    #main {
+      font-family: 'Press Start 2P', cursive;
+      }
+    #chloropleth {
+      margin: auto;
+      width: 900px;
+    }
+    #chart {
+      margin: auto;
+      width: 960px;
+    }
+    h2 {
+      text-align: center;
+    }
+    .states {
+      fill: none;
+      stroke: #5a5a5a;
+      stroke-linejoin: round;
+    }
+    .counties {
+      stroke: #bebebe;
+      stroke-linejoin: round;
+    }
+    .my-legend{
+      margin: auto;
+      width: 500px;
+    }
+    .my-legend .category-labels{
+      text-align:left;
+      font-size: 80%;
+    }  
+    .my-legend .legend-scale ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      }
+    .my-legend .legend-scale ul li {
+      display: block;
+      float: left;
+      width: 50px;
+      margin-bottom: 6px;
+      text-align: center;
+      font-size: 65%;
+      list-style: none;
+      }
+    .my-legend ul.legend-labels li span {
+      display: block;
+      float: left;
+      height: 15px;
+      width: 50px;
+      }
+    .my-legend .legend-source {
+      float: left;
+      font-size: 70%;
+      color: #999;
+      clear: both;
+    }
+    .my-legend a {
+      color: #777;
+    }
+    .axis .domain {
+       display: none;
+    }
+    .source {
+      margin: auto;
+      width: 960px;
+      font-size: 70%;
+      color: #999;
+      clear: both;
+    }
+  </style>
+	  
+	<title>2000 to 2016 United States Presidential Election Results</title>
 	<script src="https://d3js.org/d3.v4.min.js"></script>
 	<script src="data/election_results_2000_2016.json"></script>
 	<style>
-		body {
-		    position: absolute;
-		    font-family: "Proxima Nova", "Montserrat", sans-serif;
-		}
+
 		h1, h2, h3 {
 		    text-align: center;
 		    left: 10px;
